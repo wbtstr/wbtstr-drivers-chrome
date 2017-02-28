@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>WbTstr.Drivers.Chrome</id>
+    <version>2.17.0</version>
+    <authors>Onno Valkering</authors>
+    <owners>Mirabeau</owners>
+    <licenseUrl>https://github.com/wbtstr/wbtstr-drivers-chrome/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/wbtstr/wbtstr-drivers-chrome</projectUrl>
+    <iconUrl>https://avatars1.githubusercontent.com/u/23171457</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Latest ChromeDriver as convenient NuGet package.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>WbTstr ChromeDriver Selenium</tags>
+  </metadata>
+</package>
