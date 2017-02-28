@@ -1,5 +1,4 @@
 Add-Type -AssemblyName System.IO.Compression.FileSystem
-Import-Module BitsTransfer
 
 $wc = New-Object Net.WebClient
 $shell = New-Object -com Shell.Application
