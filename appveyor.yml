@@ -18,7 +18,7 @@ branches:
 before_build:
 - cmd: cd .\Scripts
 - ps: .\download-executable.ps1
-- cmd: ..\.
+- cmd: cd ..
 
 build:
   project: Source\WbTstr.Drivers.Chrome.sln
