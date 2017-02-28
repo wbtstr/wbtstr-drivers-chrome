@@ -13,4 +13,8 @@
     <copyright>Copyright 2017</copyright>
     <tags>WbTstr ChromeDriver Selenium</tags>
   </metadata>
+  <files>
+    <file src="chromedriver.exe" target="driver"/>
+    <file src="WbTstr.Drivers.Chrome.targets" target="build"/>
+  </files>  
 </package>

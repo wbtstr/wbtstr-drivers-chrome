@@ -4,7 +4,7 @@
 
 image: Visual Studio 2015
 
-version: 0.0.0.{build}
+version: {build}
 
 branches:
   only:
@@ -16,10 +16,11 @@ branches:
 #---------------------------------#
 
 before_build:
-- cmd: cd .\Scripts
-- ps: .\download-executable.ps1
-- cmd: cd ..
+- ps: cd Source
 
-build:
-  project: Source\WbTstr.Drivers.Chrome.sln
-  verbosity: minimal
+build_script:
+- ps: .\generate.ps1
+
+artifacts:
+- path: Source\WbTstr.Drivers.Chrome.*.nupkg
+  name: WbTstr.Drivers.Chrome
