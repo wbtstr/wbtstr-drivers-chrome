@@ -4,8 +4,6 @@
 
 image: Visual Studio 2015
 
-version: {build}
-
 branches:
   only:
     - master
