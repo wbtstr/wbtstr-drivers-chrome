@@ -10,7 +10,14 @@ $zipChromeDriver_source = "https://chromedriver.storage.googleapis.com/{0}/{1}" 
 $zipChromeDriver_destination = Join-Path (Convert-Path ".") $zipChromeDriver_fileName
 
 # Download and unpack .zip
-$exeChromeDriver_destination = "../Source/WbTstr.Drivers.Chrome"
+$exeChromeDriver_destination = (Convert-Path ".")
 $wc.DownloadFile($zipChromeDriver_source, $zipChromeDriver_destination)
 
 7z e $zipChromeDriver_fileName -o"$exeChromeDriver_destination" -y
+
+# Create NuGet package
+nuget pack WbTstr.Drivers.Chrome.nuspec -version $latestRelease
+
+# Cleanup
+Remove-Item $zipChromeDriver_fileName
+Remove-Item "chromedriver.exe"
