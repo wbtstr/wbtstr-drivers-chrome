@@ -16,7 +16,6 @@ branches:
 #---------------------------------#
 
 before_build:
-- ps: Import-Module BitsTransfer
 - ps: .\Scripts\download-executable.ps1
 
 build:
