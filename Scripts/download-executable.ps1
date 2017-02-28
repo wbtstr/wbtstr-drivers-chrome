@@ -14,7 +14,3 @@ $exeChromeDriver_destination = "../Source/WbTstr.Drivers.Chrome"
 $wc.DownloadFile($zipChromeDriver_source, $zipChromeDriver_destination)
 
 7z e $zipChromeDriver_fileName -o"$exeChromeDriver_destination" -y
-
-sleep (3)
-
-ls $exeChromeDriver_destination
