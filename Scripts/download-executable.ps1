@@ -15,3 +15,6 @@ $zipChromeDriver_destination = Join-Path (Convert-Path ".") $zipChromeDriver_fil
 $exeChromeDriver_destination = "..\\Source\\WbTstr.Drivers.Chrome"
 $wc.DownloadFile($zipChromeDriver_source, $zipChromeDriver_destination)
 [System.IO.Compression.ZipFile]::ExtractToDirectory($zipChromeDriver_destination, $exeChromeDriver_destination)
+
+Write-Host "Put Chrome Driver executable in '{0}'" -f $exeChromeDriver_destination
+sleep(5)
