@@ -13,5 +13,5 @@ $zipChromeDriver_destination = Join-Path (Convert-Path ".") $zipChromeDriver_fil
 
 # Download and unpack .zip
 $exeChromeDriver_destination = "..\\Source\\WbTstr.Drivers.Chrome"
-Start-BitsTransfer -Source $zipChromeDriver_source -Destination $zipChromeDriver_destination
+$wc.DownloadFile($zipChromeDriver_source, $zipChromeDriver_destination)
 [System.IO.Compression.ZipFile]::ExtractToDirectory($zipChromeDriver_destination, $exeChromeDriver_destination)
