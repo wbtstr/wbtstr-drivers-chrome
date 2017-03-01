@@ -13,7 +13,7 @@ $zipChromeDriver_destination = Join-Path (Convert-Path ".") $zipChromeDriver_fil
 $exeChromeDriver_destination = (Convert-Path ".")
 $wc.DownloadFile($zipChromeDriver_source, $zipChromeDriver_destination)
 
-7z e $zipChromeDriver_fileName -o"$exeChromeDriver_destination" -y
+Expand-Archive -Path $zipChromeDriver_fileName -DestinationPath $exeChromeDriver_destination
 
 # Create NuGet package
 nuget pack WbTstr.Drivers.Chrome.nuspec -version $latestRelease
