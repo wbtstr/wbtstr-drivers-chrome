@@ -3,7 +3,7 @@
   <metadata>
     <id>WbTstr.Drivers.Chrome</id>
     <version>2.17.0</version>
-    <authors>Onno Valkering</authors>
+    <authors>Mirabeau</authors>
     <owners>Mirabeau</owners>
     <licenseUrl>https://github.com/wbtstr/wbtstr-drivers-chrome/blob/master/LICENSE.md</licenseUrl>
     <projectUrl>https://github.com/wbtstr/wbtstr-drivers-chrome</projectUrl>
